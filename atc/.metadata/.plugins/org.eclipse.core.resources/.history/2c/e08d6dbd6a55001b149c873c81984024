@@ -1,0 +1,129 @@
+package ATCAssignment.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class AddressesPage {
+	
+	@FindBy(xpath = "//span[contains(text(),'My addresses')]")
+	private WebElement myAdderessesLink;
+	
+	@FindBy(xpath = "//span[contains(text(),'Add a new address')]")
+	private WebElement addNewAddressLink;
+	
+	@FindBy(xpath = "//input[@id='firstname']")
+	private WebElement fNameTBox;
+	
+	@FindBy(xpath = "//input[@id='lastname']")
+	private WebElement lNameTBox;
+	
+	@FindBy(xpath = "//input[@id='company']")
+	private WebElement companyNameTBox;
+	
+	@FindBy(xpath = "//input[@id='address1']")
+	private WebElement address1TBox;
+	
+	@FindBy(xpath = "//input[@id='address2']")
+	private WebElement address2TBox;
+	
+	@FindBy(xpath = "//input[@id='city']")
+	private WebElement cityTBox;
+	
+	@FindBy(xpath = "//select[@id='id_state']")
+	private WebElement stateDropDown;
+	
+	@FindBy(xpath = "//input[@id='postcode']")
+	private WebElement zipCodeTBox;
+	
+	@FindBy(xpath = "//select[@id='id_country']")
+	private WebElement countryDropDown;
+	
+	@FindBy(xpath = "//input[@id='phone']")
+	private WebElement hPhoneTBox;
+	
+	@FindBy(xpath = "//input[@id='phone_mobile']")
+	private WebElement mPhoneTBox;
+	
+	@FindBy(xpath = "//textarea[@id='other']")
+	private WebElement additionalInfoTextArea;
+	
+	@FindBy(xpath = "//input[@id='alias']")
+	private WebElement addressTitleTBox;
+	
+	@FindBy(xpath = "//span[contains(text(),'Save')]")
+	private WebElement saveButton;
+	
+	public AddressesPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void gotoAddressesPage() {
+		myAdderessesLink.click();
+	}
+	
+	public void clickAddNewAddress() {
+		addNewAddressLink.click();
+	}
+	
+	public void fillFirstName(String fName) {
+		fNameTBox.sendKeys(fName);
+	}
+	
+	public void fillLastName(String lName) {
+		lNameTBox.sendKeys(lName);
+	}
+	
+	public void fillCompanyName(String cName) {
+		companyNameTBox.sendKeys(cName);
+	}
+	
+	public void fillAddress1(String address1) {
+		address1TBox.sendKeys(address1);
+	}
+	
+	public void fillAddress2(String address2) {
+		address2TBox.sendKeys(address2);
+	}
+	
+	public void fillCityName(String cityName) {
+		cityTBox.sendKeys(cityName);
+	}
+	
+	public void selectState(String stateName) {
+		Select stateList = new Select(stateDropDown);
+		stateList.selectByVisibleText(stateName);
+	}
+	
+	public void fillZipCode(String zipCode) {
+		zipCodeTBox.sendKeys(zipCode);
+	}
+	
+	public void selectCountry(String countryName) {
+		Select countryList = new Select(countryDropDown);
+		countryList.selectByVisibleText(countryName);
+	}
+	
+	public void fillHomePhone(String hPhone) {
+		hPhoneTBox.sendKeys(hPhone);
+	}
+	
+	public void fillMobilePhone(String mPhone) {
+		mPhoneTBox.sendKeys(mPhone);
+	}
+	
+	public void fillAdditionalInfo(String additionalInfo) {
+		additionalInfoTextArea.sendKeys(additionalInfo);
+	}
+	
+	public void fillAddressTitle(String addressTitle) {
+		addressTitleTBox.sendKeys(addressTitle);
+	}
+	
+	public void saveAddress() {
+		saveButton.click();
+	}
+
+}

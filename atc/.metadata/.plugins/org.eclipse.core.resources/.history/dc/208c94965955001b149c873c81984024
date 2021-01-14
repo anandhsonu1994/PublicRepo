@@ -1,0 +1,61 @@
+package ATCAssignment.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddressesPage {
+	
+	@FindBy(xpath = "//span[contains(text(),'My addresses')]")
+	private WebElement myAdderessesLink;
+	
+	@FindBy(xpath = "//span[contains(text(),'Add a new address')]")
+	private WebElement addNewAddressLink;
+	
+	@FindBy(xpath = "//input[@id='firstname']")
+	private WebElement fNameBox;
+	
+	@FindBy(xpath = "//input[@id='lastname']")
+	private WebElement lNameBox;
+	
+	@FindBy(xpath = "//input[@id='company']")
+	private WebElement companyBox;
+	
+	@FindBy(xpath = "//input[@id='address1']")
+	private WebElement address1Box;
+	
+	@FindBy(xpath = "//input[@id='address2']")
+	private WebElement address2Box;
+	
+	@FindBy(xpath = "//input[@id='city']")
+	private WebElement cityBox;
+	
+	@FindBy(xpath = "//select[@id='id_state']")
+	private WebElement stateDropDown;
+	
+	@FindBy(xpath = "//input[@id='postcode']")
+	private WebElement zipCodeBox;
+	
+	public AddressesPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void gotoAddressesPage() {
+		myAdderessesLink.click();
+	}
+	
+	public void clickAddNewAddress() {
+		addNewAddressLink.click();
+	}
+	
+	public void fillFirstName(String fname) {
+		fNameBox.sendKeys(fname);
+	}
+	
+	public void fillLastName(String fname) {
+		lNameBox.sendKeys(fname);
+	}
+
+
+}

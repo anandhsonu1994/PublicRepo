@@ -1,0 +1,35 @@
+package ATCAssignment.steps;
+
+import org.openqa.selenium.WebDriver;
+
+import ATCAssignment.pages.CheckoutPage;
+
+public class CheckoutSteps {
+	
+	CheckoutPage checkoutPage;
+	
+	public CheckoutSteps(WebDriver driver) {
+		checkoutPage = new CheckoutPage(driver);
+	}
+	
+	public void summaryStep() {
+		checkoutPage.clickSummaryCheckoutBtn();
+	}
+	
+	public void addressStep() {
+		checkoutPage.clickAddressCheckoutBtn();
+	}
+	
+	public void shippingStep() {
+		checkoutPage.checkTermsConditionsBox();
+		checkoutPage.clickShippingCheckoutBtn();
+	}
+	
+	public void paymentStep() {
+		checkoutPage.clickPayByCheckLink();
+	}
+	
+	public void confirm() {
+		checkoutPage.clickConfirmOrderBtn();
+	}
+}

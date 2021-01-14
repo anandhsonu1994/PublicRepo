@@ -1,0 +1,76 @@
+package ATCAssignment.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class AddressesPage {
+	
+	@FindBy(xpath = "//span[contains(text(),'My addresses')]")
+	private WebElement myAdderessesLink;
+	
+	@FindBy(xpath = "//span[contains(text(),'Add a new address')]")
+	private WebElement addNewAddressLink;
+	
+	@FindBy(xpath = "//input[@id='firstname']")
+	private WebElement fNameTBox;
+	
+	@FindBy(xpath = "//input[@id='lastname']")
+	private WebElement lNameTBox;
+	
+	@FindBy(xpath = "//input[@id='company']")
+	private WebElement companyTBox;
+	
+	@FindBy(xpath = "//input[@id='address1']")
+	private WebElement address1TBox;
+	
+	@FindBy(xpath = "//input[@id='address2']")
+	private WebElement address2TBox;
+	
+	@FindBy(xpath = "//input[@id='city']")
+	private WebElement cityTBox;
+	
+	@FindBy(xpath = "//select[@id='id_state']")
+	private WebElement stateDropDown;
+	
+	@FindBy(xpath = "//input[@id='postcode']")
+	private WebElement zipCodeTBox;
+	
+	@FindBy(xpath = "//select[@id='id_country']")
+	private WebElement countryDropDown;
+	
+	@FindBy(xpath = "//input[@id='phone']")
+	private WebElement hPhoneTBox;
+	
+	@FindBy(xpath = "//input[@id='phone_mobile']")
+	private WebElement mPhoneTBox;
+	
+	@FindBy(xpath = "//textarea[@id='other']")
+	private WebElement additionalInfoTextArea;
+	
+	@FindBy(xpath = "//input[@id='alias']")
+	private WebElement addressTitleTBox;
+	
+	public AddressesPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void gotoAddressesPage() {
+		myAdderessesLink.click();
+	}
+	
+	public void clickAddNewAddress() {
+		addNewAddressLink.click();
+	}
+	
+	public void fillFirstName(String fname) {
+		fNameTBox.sendKeys(fname);
+	}
+	
+	public void fillLastName(String fname) {
+		lNameTBox.sendKeys(fname);
+	}
+
+
+}

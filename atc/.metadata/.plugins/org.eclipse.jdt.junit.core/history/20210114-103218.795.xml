@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ATCAssignment" tests="16" started="16" failures="0" errors="2" ignored="14">
+  <testsuite name="ATCAssignment.TestRunner" time="65.864">
+    <testsuite name="Feature: Shopping" time="65.864">
+      <testsuite name="Scenario: Login, Add Address, Shop and sign out" time="60.069" incomplete="true">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'My addresses')]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANANDANK', ip: '172.29.20.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\anand\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 584124d1719f3242d42f846b154881ae
+*** Element info: {Using=xpath, value=//span[contains(text(),'My addresses')]}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;
+	at ATCAssignment.pages.AddressesPage.gotoAddressesPage(AddressesPage.java:64)&#13;
+	at ATCAssignment.steps.AddressesSteps.addNewAddress(AddressesSteps.java:16)&#13;
+	at ATCAssignment.stepdefinitions.Shopping.navigate_to_My_Addresses_and_add_a_new_address(Shopping.java:74)&#13;
+	at ✽.And Navigate to 'My Addresses' and add a new address(shopping.feature:5)&#13;
+&#13;
+</error>
+        <testcase name="Given Login into the application" classname="Scenario: Login, Add Address, Shop and sign out" time="60.062"/>
+        <testcase name="And Navigate to 'My Addresses' and add a new address" classname="Scenario: Login, Add Address, Shop and sign out" time="0.006">
+          <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'My addresses')]"}
+  (Session info: chrome=87.0.4280.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANANDANK', ip: '172.29.20.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\anand\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 584124d1719f3242d42f846b154881ae
+*** Element info: {Using=xpath, value=//span[contains(text(),'My addresses')]}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;
+	at ATCAssignment.pages.AddressesPage.gotoAddressesPage(AddressesPage.java:64)&#13;
+	at ATCAssignment.steps.AddressesSteps.addNewAddress(AddressesSteps.java:16)&#13;
+	at ATCAssignment.stepdefinitions.Shopping.navigate_to_My_Addresses_and_add_a_new_address(Shopping.java:74)&#13;
+	at ✽.And Navigate to 'My Addresses' and add a new address(shopping.feature:5)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And Fill all the informations(not only the mandatory)" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Click 'Save'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Navigate to 'Women' --&gt; Summer dresses" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And The Items would be in 'Grid view'. Change it to 'List View'." classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Click on the first item to view." classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Increase the quantity to 5" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Change the size to 'L'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Select any colour." classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Add to cart" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Click 'Continue shopping' and repeat the same for the other 2 items as well under the summer dresses." classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Proceed to checkout and complete the payment" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Move to your profile and check 'order history and details'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="When Capture screenshot of the order history" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="Then Sign out from the application" classname="Scenario: Login, Add Address, Shop and sign out" time="5.787" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

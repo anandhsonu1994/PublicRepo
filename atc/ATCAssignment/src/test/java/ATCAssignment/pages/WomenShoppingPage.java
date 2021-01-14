@@ -1,0 +1,32 @@
+package ATCAssignment.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class WomenShoppingPage {
+	WebDriver driver;
+	
+	@FindBy(xpath = "//li/a[text() ='Women']")
+	private WebElement womenLink;
+	
+	@FindBy(xpath = "//a[text() ='Summer Dresses']")
+	private WebElement summerDressesLink;
+	
+	public WomenShoppingPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+		this.driver = driver;
+	}
+	
+	public void mouseOverWomen() {
+		Actions actions = new Actions(this.driver);
+		actions.moveToElement(womenLink).perform();
+	}
+	
+	public void clickSummerDresses() {
+		summerDressesLink.click();
+	}
+
+}

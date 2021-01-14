@@ -1,0 +1,62 @@
+package ATCAssignment.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+
+public class SummerDressesPage {
+	
+	@FindBy(xpath = "//a[@title='List']")
+	private WebElement listViewLink;
+	
+	@FindBy(xpath = "//a[@class='product-name']")
+	private List<WebElement> productList;
+	
+	@FindBy(xpath = "//i[@class='icon-plus']")
+	private WebElement plusIcon;
+	
+	@FindBy(xpath = "//select[@id='group_1']")
+	private WebElement sizeDropDown;
+	
+	@FindBy(xpath = "//a[@id='color_11']")
+	private WebElement colorLink;
+	
+	@FindBy(xpath = "//button[@type='submit']/span[text()='Add to cart']")
+	private WebElement addToCartButton;
+
+	
+	public SummerDressesPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void clickListView() {
+		listViewLink.click();
+	}
+	
+	public void clickOnProduct(int index) {
+		productList.get(index).click();
+	}
+	
+	public void clickPlusIcon() {
+		plusIcon.click();
+	}
+	
+	public void selectSize(String size) {
+		Select sizeList = new Select(sizeDropDown);
+		sizeList.selectByVisibleText(size);
+	}
+	
+	public void clickBlackColor() {
+		colorLink.click();
+	}
+	
+	public void clickAddToCart() {
+		addToCartButton.click();
+	}
+	
+	
+}

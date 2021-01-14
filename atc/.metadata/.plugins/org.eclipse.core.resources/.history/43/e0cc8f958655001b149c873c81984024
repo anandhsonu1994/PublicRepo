@@ -1,0 +1,37 @@
+package ATCAssignment.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class SummerDressesPage {
+	
+	@FindBy(xpath = "//a[@title='List']")
+	private WebElement listViewLink;
+	
+	@FindBy(xpath = "//a[@class='product-name']")
+	private List<WebElement> productList;
+	
+	@FindBy(xpath = "//i[@class='icon-plus']")
+	private WebElement plusIcon;
+
+	
+	public SummerDressesPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void clickListView() {
+		listViewLink.click();
+	}
+	
+	public void clickOnProduct(int index) {
+		productList.get(index).click();
+	}
+	
+	public void clickPlusIcon() {
+		plusIcon.click()
+	}
+}

@@ -1,0 +1,23 @@
+package ATCAssignment.steps;
+
+import org.openqa.selenium.WebDriver;
+
+import ATCAssignment.pages.SummerDressesPage;
+
+public class SummerDressesSteps {
+	
+	SummerDressesPage summerDressesPage;
+	
+	public SummerDressesSteps(WebDriver driver) {
+		summerDressesPage = new SummerDressesPage(driver);
+	}
+	
+	public void changeToListView() {
+		summerDressesPage.clickListView();
+	}
+	
+	public void addFirstProductCart() {
+		summerDressesPage.clickOnProduct(0);
+	}
+
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ATCAssignment" tests="16" started="16" failures="0" errors="2" ignored="16">
+  <testsuite name="ATCAssignment.TestRunner">
+    <testsuite name="Feature: Shopping">
+      <testsuite name="Scenario: Login, Add Address, Shop and sign out" time="17.041" incomplete="true">
+        <error>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANANDANK', ip: '172.29.20.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\anand\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c6a6106c882896916614bcb6ef5c5c69&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)&#13;
+	at ATCAssignment.stepdefinitions.Shopping.setup(Shopping.java:46)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#13;
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#13;
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=87.0.4280.141)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ANANDANK', ip: '172.29.20.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\anand\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50876}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c6a6106c882896916614bcb6ef5c5c69&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)&#13;
+	at ATCAssignment.stepdefinitions.Shopping.teardown(Shopping.java:57)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:40)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:34)&#13;
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)&#13;
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)&#13;
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)&#13;
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+&#13;
+</error>
+        <testcase name="Given Login into the application" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Navigate to 'My Addresses' and add a new address" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Fill all the informations(not only the mandatory)" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Click 'Save'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Navigate to 'Women' --&gt; Summer dresses" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And The Items would be in 'Grid view'. Change it to 'List View'." classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Click on the first item to view." classname="Scenario: Login, Add Address, Shop and sign out" time="0.002" ignored="true"/>
+        <testcase name="And Increase the quantity to 5" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Change the size to 'L'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Select any colour." classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Add to cart" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Click 'Continue shopping' and repeat the same for the other 2 items as well under the summer dresses." classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="And Proceed to checkout and complete the payment" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="And Move to your profile and check 'order history and details'" classname="Scenario: Login, Add Address, Shop and sign out" time="0.001" ignored="true"/>
+        <testcase name="When Capture screenshot of the order history" classname="Scenario: Login, Add Address, Shop and sign out" time="0.0" ignored="true"/>
+        <testcase name="Then Sign out from the application" classname="Scenario: Login, Add Address, Shop and sign out" time="17.032" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

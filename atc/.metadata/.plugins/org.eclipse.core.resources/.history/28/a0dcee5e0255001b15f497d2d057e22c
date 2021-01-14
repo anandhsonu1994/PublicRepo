@@ -1,0 +1,57 @@
+package ATCAssignment.stepFiles;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Login {
+	WebDriver driver;
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\java\\ATCAssignment\\resources\\chromedriver.exe");
+		this.driver = new ChromeDriver();
+		this.driver.manage().window().maximize();
+		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+		
+	}
+	@Given("^User navigates to stackoverflow website$")
+	public void user_navigates_to_stackoverflow_website() throws Throwable {
+	    System.out.println("Method 1");
+	}
+
+	@And("^User clicks on the login button on homepage$")
+	public void user_clicks_on_the_login_button_on_homepage() throws Throwable {
+		System.out.println("Method 2");
+	}
+
+	@And("^User enter valid username$")
+	public void user_enter_valid_username() throws Throwable {
+		System.out.println("Method 3");
+	}
+
+	@And("^User enter valid password$")
+	public void user_enter_valid_password() throws Throwable {
+		System.out.println("Method 4");
+	}
+
+	@When("^User clicks on the login button$")
+	public void user_clicks_on_the_login_button() throws Throwable {
+		System.out.println("Method 5");
+	}
+
+	@Then("^User should be taken to successful login page$")
+	public void user_should_be_taken_to_successful_login_page() throws Throwable {
+		System.out.println("Method 6");
+	}
+
+
+}

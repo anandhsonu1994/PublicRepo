@@ -1,0 +1,33 @@
+package ATCAssignment.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CheckoutPage {
+	
+	
+	@FindBy(xpath = "//p/a[@title='Proceed to checkout']")
+	private WebElement summaryCheckoutBtn;
+	
+	@FindBy(xpath = "//button[@name='processAddress']")
+	private WebElement addressCheckoutBtn;
+	
+	@FindBy(xpath = "//input[@id='cgv']")
+	private WebElement termsCheckBox;
+	
+	@FindBy(xpath = "//button[@name='processCarrier']")
+	private WebElement shippingCheckoutBtn;
+	
+	
+	
+	public CheckoutPage(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void summaryCheckoutBtn() {
+		proceedCheckoutBtn.click();
+	}
+
+}

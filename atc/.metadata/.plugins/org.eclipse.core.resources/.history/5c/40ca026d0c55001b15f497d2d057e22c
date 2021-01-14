@@ -1,0 +1,16 @@
+package ATCAssignment.steps;
+
+import ATCAssignment.pages.LoginPage;
+
+public class LoginSteps {
+	
+	LoginPage loginPage = new LoginPage();
+	
+	public void signIn() {
+		loginPage.gotoSignInPage();	
+	}
+	
+	public void signOut() {
+		
+	}
+}

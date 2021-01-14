@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cucumber.api.java.Before"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="cucumber.api.java.After"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Given"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.When"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.Then"/>
+<fullyQualifiedTypeName name="cucumber.api.java.en.And"/>
+<fullyQualifiedTypeName name="ATCAssignment.pages.LoginPage"/>
+<fullyQualifiedTypeName name="ATCAssignment.steps.LoginSteps"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="ATCAssignment.steps.AddressesSteps"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Select"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="ATCAssignment.pages.WomenShoppingPage"/>
+<fullyQualifiedTypeName name="ATCAssignment.steps.WomenShoppingSteps"/>
+<fullyQualifiedTypeName name="ATCAssignment.pages.SummerDressesPage"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="ATCAssignment.steps.SummerDressesSteps"/>
+<fullyQualifiedTypeName name="ATCAssignment.steps.CheckoutSteps"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
+<fullyQualifiedTypeName name="java.nio.file.Files"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.google.common.io.Files"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Action"/>
+</qualifiedTypeNameHistroy>

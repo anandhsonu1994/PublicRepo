@@ -1,0 +1,133 @@
+package ATCAssignment.stepdefinitions;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import ATCAssignment.steps.LoginSteps;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Shopping {
+	
+	WebDriver driver;
+	LoginSteps loginStep = new LoginSteps(driver); 
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver", ".\\src\\test\\java\\ATCAssignment\\resources\\chromedriver.exe");
+		this.driver = new ChromeDriver();
+		this.driver.manage().window().maximize();
+		this.driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		this.driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
+	}
+	
+	@After
+	public void teardown() {
+		this.driver.manage().deleteAllCookies();
+		this.driver.quit();
+		this.driver = null;
+	}
+
+	@Given("^Login into the application$")
+	public void login_into_the_application() throws Throwable {
+	   loginStep.signIn();
+	    
+	}
+
+	@And("^Navigate to 'My Addresses' and add a new address$")
+	public void navigate_to_My_Addresses_and_add_a_new_address() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Fill all the informations\\(not only the mandatory\\)$")
+	public void fill_all_the_informations_not_only_the_mandatory() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Click 'Save'$")
+	public void click_Save() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Navigate to 'Women' --> Summer dresses$")
+	public void navigate_to_Women_Summer_dresses() throws Throwable {
+	   
+	    
+	}
+
+	@And("^The Items would be in 'Grid view'\\. Change it to 'List View'\\.$")
+	public void the_Items_would_be_in_Grid_view_Change_it_to_List_View() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Click on the first item to view\\.$")
+	public void click_on_the_first_item_to_view() throws Throwable {
+	   
+	    
+	}
+
+	@Given("^Increase the quantity to (\\d+)$")
+	public void increase_the_quantity_to(int arg1) throws Throwable {
+	   
+	    
+	}
+
+	@Given("^Change the size to 'L'$")
+	public void change_the_size_to_L() throws Throwable {
+	   
+	    
+	}
+
+	@Given("^Select any colour\\.$")
+	public void select_any_colour() throws Throwable {
+	   
+	    
+	}
+
+	@Given("^Add to cart$")
+	public void add_to_cart() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Click 'Continue shopping' and repeat the same for the other (\\d+) items as well under the summer dresses\\.$")
+	public void click_Continue_shopping_and_repeat_the_same_for_the_other_items_as_well_under_the_summer_dresses(int arg1) throws Throwable {
+	   
+	    
+	}
+
+	@And("^Proceed to checkout and complete the payment$")
+	public void proceed_to_checkout_and_complete_the_payment() throws Throwable {
+	   
+	    
+	}
+
+	@And("^Move to your profile and check 'order history and details'$")
+	public void move_to_your_profile_and_check_order_history_and_details() throws Throwable {
+	   
+	    
+	}
+
+	@When("^Capture screenshot of the order history$")
+	public void capture_screenshot_of_the_order_history() throws Throwable {
+	   
+	    
+	}
+
+	@Then("^Sign out from the application$")
+	public void sign_out_from_the_application() throws Throwable {
+	   
+	    
+	}
+}
